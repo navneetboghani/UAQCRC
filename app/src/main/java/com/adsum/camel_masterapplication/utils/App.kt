@@ -16,6 +16,8 @@ class App : MultiDexApplication() {
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
+
+
 //        initRealm()
 //        initTwitter()
 
