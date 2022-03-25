@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="@dimen/_13sp"
+    android:paddingTop="@dimen/_5dp"
+    android:paddingRight="@dimen/_13sp">
+
+    <TableLayout
+        android:id="@+id/simpleTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/fourRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/tv_participant"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/topleftcell"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/name_of_participant"
+                android:textColor="@color/lighttext"
+                android:textSize="@dimen/_15sp" />
+
+            <TextView
+                android:id="@+id/tv_participant1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toprightcell"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/name_of_participant"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/secondRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+
+            <TextView
+                android:id="@+id/tv_camelType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/camelName"
+                android:textColor="@color/lighttext"
+                android:textSize="@dimen/_15sp" />
+
+            <TextView
+                android:id="@+id/tv_camelType1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+
+                android:padding="@dimen/_10dp"
+                android:text="@string/type"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/thirdRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/tv_camelNo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottomleftcell"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/camel_no"
+                android:textColor="@color/lighttext"
+                android:textSize="@dimen/_15sp" />
+
+            <TextView
+                android:id="@+id/tv_camelNo1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottomrightcell"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/camel_no"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/red_layout"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textAllCaps="false"
+        android:textColor="@color/login_white"
+        android:textSize="@dimen/_15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#D6D2C7</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="Gray_divider">#555</color>
+    <color name="transparent">#00000000</color><!--FF5500-->
+    <color name="lightgray1">#ccc</color>
+    <color name="lighttext">#7D673E</color>
+    <color name="red">#ed3521</color>
+    <color name="icon">#50031A</color>
+    <color name="royalblue">  #4169E1</color>
+    <color name="lightgrey">#DCDCDC</color>
+
+
+    <color name="green">#006400</color>
+    <color name="splash_background">#17B8AB</color>
+    <color name="main_background">#F8F8F8</color>
+    <color name="light_grey">#B2B2B2</color>
+    <color name="theme_color">#17B8AB</color>
+    <color name="text_color_create">#707070</color>
+
+    <color name="ll_dots_background">#707070</color>
+    <color name="grey">#868686</color>
+    <color name="hr_color">#B4B4B4</color>
+    <color name="border">#CCCCCC</color>
+    <color name="new_text_color">#3A3A3A</color>
+
+    <color name="trasparentblack">#99000000</color>
+    <color name="Black">#000000</color>
+    <color name="btn_yellow">#F2CD0C</color>
+    <color name="Gray">#808080</color>
+    <color name="tra_yellow">#B3F2CD0C</color>
+    <color name="login_white">#f6f6f6</color>
+    <color name="brown">#594020</color>
+    <color name="search_txt">#F2DCB3</color>
+
+
+
+    <color name="snap_time_picker_transparent_white">#00ffffff</color>
+    <color name="snap_time_picker_white">#FFFFFF</color>
+    <color name="snap_time_picker_black">#333333</color>
+    <color name="snap_time_picker_black_5">#0c000000</color>
+    <color name="snap_time_picker_default_primary">#008577</color>
+    <color name="snap_time_picker_default_accent">#D81B60</color>
+    <color name="snap_time_picker_light_gray">#c2c2c2</color>
+    <color name="snap_time_picker_extra_light_gray">#ebebeb</color>
+</resources>

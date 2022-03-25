@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_10dp"
+        android:padding="@dimen/_10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--        <ImageView-->
+            <!--            android:layout_width="20dp"-->
+            <!--            android:layout_height="20dp"-->
+            <!--            android:layout_alignParentRight="true"-->
+            <!--            android:layout_marginRight="5dp"-->
+            <!--            android:background="@color/colorPrimaryDark"-->
+            <!--            android:id="@+id/close"-->
+            <!--            android:layout_marginTop="@dimen/_10dp"-->
+            <!--            android:src="@drawable/close"-->
+            <!--            app:tint="@color/lighttext" />-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/linearLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:weightSum="3"-->
+            <!--                tools:layout_editor_absoluteX="0dp"-->
+            <!--                tools:layout_editor_absoluteY="0dp">-->
+
+            <TextView
+                android:id="@+id/tv_addcamel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:paddingTop="@dimen/_15dp"
+                android:text="@string/addcamel"
+                android:textColor="@color/lighttext"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_camel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/tv_addcamel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:gravity="start"
+                android:hint="@string/enterthecamle"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gray"
+                android:textDirection="rtl"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_addcamel" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_camel">
+
+                <Button
+                    android:id="@+id/btn_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/red_layout"
+                    android:text="@string/male"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_addcamel"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edt_camel" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="1dp" />
+
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/red_layout"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_addcamel"
+                    app:layout_constraintTop_toBottomOf="@+id/edt_camel" />
+            </LinearLayout>
+
+
+            <!--            </LinearLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

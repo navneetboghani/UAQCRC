@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/race_id_from_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="race_id_from_sub"
+                android:textColor="@color/lighttext"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/_13sp"
+                android:paddingRight="@dimen/_13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/race_id_from_sub">
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/login_white"
+                    app:layout_constraintBottom_toTopOf="@+id/roundNameFromSub"
+                    app:layout_constraintEnd_toEndOf="@+id/simpleTableLayout"
+                    app:layout_constraintStart_toStartOf="@+id/simpleTableLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/simpleTableLayout" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/from_sub_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/roundNameFromSub" />
+
+                <TableLayout
+                    android:id="@+id/simpleTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:stretchColumns="*"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+
+                        android:id="@+id/firstRow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:id="@+id/fragment_from_sub_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="Abkar"
+                            android:textColor="@color/lighttext"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/from_sub_costumization"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="public"
+                            android:textColor="@color/lighttext"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/roundNameFromSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Roundname"
+                    app:layout_constraintEnd_toEndOf="@+id/simpleTableLayout"
+                    app:layout_constraintStart_toStartOf="@+id/simpleTableLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/simpleTableLayout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

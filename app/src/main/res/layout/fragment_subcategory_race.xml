@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/tv_raceid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingTop="@dimen/_4dp"
+                android:paddingRight="@dimen/_10dp"
+                android:text="@string/title"
+                android:textColor="@color/lighttext"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/_13sp"
+                android:paddingRight="@dimen/_13sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_raceid">
+
+                <TableLayout
+                    android:id="@+id/simpleTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:stretchColumns="*"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+
+                        android:id="@+id/firstRow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:id="@+id/tv_sub_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="Abkar"
+                            android:textColor="@color/lighttext"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_sub_costomization"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="public"
+                            android:textColor="@color/lighttext"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+                </TableLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/activity_main_view1_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_2dp"
+                android:background="@color/Gray"
+                app:layout_constraintTop_toBottomOf="@id/cl_sub"
+                app:layout_constraintVertical_bias="1" />
+
+            <TextView
+                android:id="@+id/txt_camelname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:text="@string/your_camel_name"
+                android:textColor="@color/lightgray1"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_main_view1_top" />
+
+            <TextView
+                android:id="@+id/tv_camelname"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_layout"
+                android:gravity="center"
+                android:hint="@string/selection"
+                app:layout_constraintEnd_toStartOf="@+id/btn_add_camel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_camelname" />
+
+            <!--    <Spinner-->
+            <!--        android:id="@+id/spn_camelname"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="@dimen/_35dp"-->
+
+            <!--        android:layout_marginLeft="25dp"-->
+            <!--        android:layout_marginTop="@dimen/_10dp"-->
+            <!--        android:layout_marginRight="@dimen/_10dp"-->
+            <!--        android:background="@drawable/round_layout"-->
+            <!--        app:layout_constrainedWidth="true"-->
+            <!--        app:layout_constraintEnd_toStartOf="@+id/btn_add_camel"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@id/txt_camelname" />-->
+
+            <!--        android:layout_below="@+id/edt_username"-->
+
+            <Button
+                android:id="@+id/btn_add_camel"
+                android:layout_width="@dimen/_120dp"
+                android:layout_height="@dimen/_35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/red_layout"
+                android:text="@string/Add_camel"
+                android:textColor="@color/login_white"
+                android:textSize="@dimen/_12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_camelname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_camelname" />
+
+            <TextView
+                android:id="@+id/tv_strok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:lines="1"
+                android:text="@string/strock"
+                android:textColor="@color/lighttext"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_add_camel" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sub_race_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:layout_marginRight="@dimen/_5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_strok" />
+            <!--        tools:listitem="@layout/item_race_subcategory"-->
+            <TextView
+                android:id="@+id/tv_notfound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40dp"
+                android:text="@string/datanotfound"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_strok" />
+
+            <FrameLayout
+                android:id="@+id/fm_subcategories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

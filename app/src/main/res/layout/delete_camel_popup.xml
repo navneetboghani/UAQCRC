@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="@dimen/_10dp"
+        android:padding="@dimen/_10dp">
+
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:text="Alert!!"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:paddingTop="@dimen/_15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/lighttext"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/close"
+            android:layout_marginTop="@dimen/_10dp"
+            android:src="@drawable/close"
+            app:tint="@color/lighttext" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginStart="20dp"
+            android:text="Are You Sure You Want to delete??"
+            android:textColor="@color/lighttext"
+            android:textSize="@dimen/_16sp" />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_delete"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="18dp"
+            android:text="DELETE"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sp"
+            android:layout_marginBottom="@dimen/_15dp"
+            android:background="@drawable/red_layout"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
